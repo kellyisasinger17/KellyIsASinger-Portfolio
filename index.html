@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Kelly Singer Lancon - front-end developer portfolio featuring responsive web apps and CMS-built sites."
+      content="Kelly Singer Lançon - front-end developer portfolio featuring responsive web apps and CMS-built sites."
     />
-    <title>Kelly Singer Lancon | Front-End Developer</title>
+    <title>Kelly Singer Lançon | Front-End Developer</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="globals.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top portfolio-nav">
+    <nav class="navbar navbar-expand-lg sticky-top portfolio-nav home-nav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Kelly Singer Lancon</a>
+        <a class="navbar-brand" href="index.html">Kelly Singer Lançon</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,6 +43,18 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
+            <li class="nav-item project-menu">
+              <a class="nav-link" href="#projects">Projects</a>
+              <div class="project-dropdown" aria-label="Project links">
+                <a href="https://interactiveweather.netlify.app/" target="_blank" rel="noreferrer">Interactive Weather App</a>
+                <a href="https://interactivedictionaryapp.netlify.app/" target="_blank" rel="noreferrer">Dictionary App</a>
+                <a href="https://lyontravelproject.netlify.app/" target="_blank" rel="noreferrer">Visit Lyon</a>
+                <a href="https://world-clock-ksl.netlify.app/" target="_blank" rel="noreferrer">World Clock</a>
+                <a href="https://kslaipoemgenerator.netlify.app/" target="_blank" rel="noreferrer">AI Poem Generator</a>
+                <a href="https://www.kellyisasinger.com/" target="_blank" rel="noreferrer">KellyIsASinger</a>
+                <a href="https://www.maisonlancon.com/" target="_blank" rel="noreferrer">Maison Lançon</a>
+              </div>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -52,122 +64,78 @@
     </nav>
 
     <main>
-      <section class="hero-section">
+      <section class="home-hero">
         <div class="container">
-          <div class="row align-items-center g-4">
+          <div class="row align-items-center g-5 home-intro">
             <div class="col-lg-7">
-              <p class="eyebrow">Front-End Developer</p>
-              <h1>Kelly Singer Lancon</h1>
+              <h1>Kelly Singer Lançon</h1>
               <p class="hero-copy">
-                I build responsive, polished web experiences with a strong eye for
-                usability, clean structure, and expressive design.
+                Front-End Developer with a background in classical performance,
+                blending technical precision with creative execution.
               </p>
-              <div class="hero-actions">
-                <a class="btn btn-primary" href="#projects">View Projects</a>
-                <a class="btn btn-outline-primary" href="contact.html">Get in Touch</a>
-              </div>
             </div>
             <div class="col-lg-5 text-lg-end">
               <img
                 class="hero-image"
                 src="images/Headshot 2026.png"
-                alt="Kelly Lancon headshot"
+                alt="Kelly Lançon headshot"
               />
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="content-section" id="projects">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Selected Work</p>
-            <h2>Projects and Apps</h2>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-              <article class="portfolio-card h-100">
-                <img src="images/interactiveweather.png" alt="Interactive Weather App preview" />
-                <div class="card-body">
+          <div class="home-work" id="projects">
+            <section class="home-work-panel projects-panel" aria-labelledby="projects-heading">
+              <h2 id="projects-heading">Projects and Apps</h2>
+              <div class="project-tile-grid">
+                <a class="project-tile" href="https://interactiveweather.netlify.app/" target="_blank" rel="noreferrer">
+                  <img src="images/interactiveweather.png" alt="Interactive Weather App preview" />
                   <h3>Interactive Weather App</h3>
-                  <p>Responsive weather search experience with clear, task-focused UI.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="portfolio-card h-100">
-                <img src="images/dictionary.png" alt="Dictionary App preview" />
-                <div class="card-body">
+                </a>
+                <a class="project-tile" href="https://interactivedictionaryapp.netlify.app/" target="_blank" rel="noreferrer">
+                  <img src="images/dictionary.png" alt="Dictionary App preview" />
                   <h3>Dictionary App</h3>
-                  <p>Search-driven word reference app with organized definitions and results.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="portfolio-card h-100">
-                <img src="images/coming soon.png" alt="NYC Museums App preview" />
-                <div class="card-body">
-                  <h3>NYC Museums</h3>
-                  <p>A cultural guide concept designed for easy browsing and discovery.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="portfolio-card h-100">
-                <img src="images/lyontravel.png" alt="Visit Lyon Site preview" />
-                <div class="card-body">
+                </a>
+                <article class="project-tile">
+                  <img src="images/coming soon.png" alt="Museum App preview" />
+                  <h3>Museum App</h3>
+                </article>
+                <a class="project-tile" href="https://lyontravelproject.netlify.app/" target="_blank" rel="noreferrer">
+                  <img src="images/lyontravel.png" alt="Visit Lyon preview" />
                   <h3>Visit Lyon</h3>
-                  <p>Travel landing page with compact visual cards and destination content.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="portfolio-card h-100">
-                <img src="images/word clock.png" alt="World Clock App preview" />
-                <div class="card-body">
-                  <h3>World Clock</h3>
-                  <p>Time zone interface built for quick comparison across cities.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="portfolio-card h-100">
-                <img src="images/aipoem.png" alt="AI Poem Generator App preview" />
-                <div class="card-body">
+                </a>
+                <a class="project-tile" href="https://world-clock-ksl.netlify.app/" target="_blank" rel="noreferrer">
+                  <img src="images/word clock.png" alt="World Clock App preview" />
+                  <h3>World Clock App</h3>
+                </a>
+                <a class="project-tile" href="https://kslaipoemgenerator.netlify.app/" target="_blank" rel="noreferrer">
+                  <img src="images/aipoem.png" alt="AI Poem Generator preview" />
                   <h3>AI Poem Generator</h3>
-                  <p>Creative prompt-based app pairing simple inputs with generated writing.</p>
-                </div>
-              </article>
-            </div>
+                </a>
+              </div>
+            </section>
+
+            <section class="home-work-panel cms-panel" aria-labelledby="cms-heading">
+              <h2 id="cms-heading">CMS-Built Sites</h2>
+              <div class="project-tile-grid cms-grid">
+                <a class="project-tile wide-tile" href="https://www.kellyisasinger.com/" target="_blank" rel="noreferrer">
+                  <img src="images/kellyisasinger.png" alt="KellyIsASinger website preview" />
+                  <h3>KellyIsASinger</h3>
+                </a>
+                <a class="project-tile wide-tile" href="https://www.maisonlancon.com/" target="_blank" rel="noreferrer">
+                  <img src="images/Full logo.PNG" alt="Maison Lançon website preview" />
+                  <h3>Maison Lançon</h3>
+                </a>
+              </div>
+            </section>
           </div>
         </div>
       </section>
 
-      <section class="content-section section-tint">
+      <section class="home-cta">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">CMS Experience</p>
-            <h2>CMS-Built Sites</h2>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <article class="portfolio-card h-100">
-                <img src="images/kellyisasinger.png" alt="KellyIsASinger website preview" />
-                <div class="card-body">
-                  <h3>KellyIsASinger</h3>
-                  <p>Performer website with clear content hierarchy and audience-focused pages.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6">
-              <article class="portfolio-card h-100">
-                <img src="images/Full logo.PNG" alt="Maison Lancon website logo" />
-                <div class="card-body">
-                  <h3>Maison Lancon</h3>
-                  <p>Brand-forward CMS site work balancing visual identity and usability.</p>
-                </div>
-              </article>
-            </div>
+          <div class="home-cta-inner">
+            <p>Responsive websites, polished interfaces, and thoughtful front-end builds.</p>
+            <a class="btn btn-primary" href="contact.html">Start a Conversation</a>
           </div>
         </div>
       </section>
@@ -183,5 +151,15 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.querySelectorAll("[data-bs-toggle='collapse']").forEach((button) => {
+        button.addEventListener("click", () => {
+          const target = document.querySelector(button.dataset.bsTarget);
+          if (!target || window.bootstrap) return;
+          const isOpen = target.classList.toggle("show");
+          button.setAttribute("aria-expanded", String(isOpen));
+        });
+      });
+    </script>
   </body>
 </html>

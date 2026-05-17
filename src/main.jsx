@@ -1,7 +1,7 @@
 import { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 
-import "../globals.css";
+import "../styles.css";
 
 function App() {
   const [city, setCity] = useState("");

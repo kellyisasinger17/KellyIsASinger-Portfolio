@@ -203,6 +203,10 @@ p {
   padding-bottom: 5rem;
 }
 
+.contact-portrait {
+  text-align: center;
+}
+
 .eyebrow {
   color: var(--color-accent);
   font-size: 0.9rem;
@@ -464,7 +468,7 @@ p {
 }
 
 .tools-panel {
-  background: var(--color-surface);
+  background: #ffffff;
   border: 1px solid rgba(228, 225, 220, 0.7);
   border-radius: 2px;
   padding: 0.9rem;
@@ -472,21 +476,22 @@ p {
 }
 
 .tools-panel h2 {
-  background: #ffff;
+  background: #ffffff;
   font-size: 1.25rem;
   margin-bottom: 0.9rem;
   padding: 0.35rem 0.5rem;
+  text-align: center;
 }
 
 .compact-tool-grid {
-  background: #ffff;
+  background: #ffffff;
   gap: 0.7rem 0.8rem;
   grid-template-columns: repeat(5, minmax(42px, 1fr));
   padding: 0.45rem;
 }
 
 .compact-tool-grid .tool-card {
-  background: #ffff;
+  background: #ffffff;
   border: 0;
   border-radius: 4px;
   gap: 0.3rem;

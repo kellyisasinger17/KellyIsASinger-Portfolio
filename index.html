@@ -3,15 +3,185 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Kelly - Developer & Opera Performer Portfolio" />
-    <title>Kelly | Developer & Opera Performer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta
+      name="description"
+      content="Kelly Singer Lancon - front-end developer portfolio featuring responsive web apps and CMS-built sites."
+    />
+    <title>Kelly Singer Lancon | Front-End Developer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playwrite+CU+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="globals.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <nav class="navbar navbar-expand-lg sticky-top portfolio-nav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Kelly Singer Lancon</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#portfolioNavbar"
+          aria-controls="portfolioNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="portfolioNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <p class="eyebrow">Front-End Developer</p>
+              <h1>Kelly Singer Lancon</h1>
+              <p class="hero-copy">
+                I build responsive, polished web experiences with a strong eye for
+                usability, clean structure, and expressive design.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">View Projects</a>
+                <a class="btn btn-outline-primary" href="contact.html">Get in Touch</a>
+              </div>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <img
+                class="hero-image"
+                src="images/Headshot 2026.png"
+                alt="Kelly Lancon headshot"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Projects and Apps</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <article class="portfolio-card h-100">
+                <img src="images/interactiveweather.png" alt="Interactive Weather App preview" />
+                <div class="card-body">
+                  <h3>Interactive Weather App</h3>
+                  <p>Responsive weather search experience with clear, task-focused UI.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="portfolio-card h-100">
+                <img src="images/dictionary.png" alt="Dictionary App preview" />
+                <div class="card-body">
+                  <h3>Dictionary App</h3>
+                  <p>Search-driven word reference app with organized definitions and results.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="portfolio-card h-100">
+                <img src="images/coming soon.png" alt="NYC Museums App preview" />
+                <div class="card-body">
+                  <h3>NYC Museums</h3>
+                  <p>A cultural guide concept designed for easy browsing and discovery.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="portfolio-card h-100">
+                <img src="images/lyontravel.png" alt="Visit Lyon Site preview" />
+                <div class="card-body">
+                  <h3>Visit Lyon</h3>
+                  <p>Travel landing page with compact visual cards and destination content.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="portfolio-card h-100">
+                <img src="images/word clock.png" alt="World Clock App preview" />
+                <div class="card-body">
+                  <h3>World Clock</h3>
+                  <p>Time zone interface built for quick comparison across cities.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="portfolio-card h-100">
+                <img src="images/aipoem.png" alt="AI Poem Generator App preview" />
+                <div class="card-body">
+                  <h3>AI Poem Generator</h3>
+                  <p>Creative prompt-based app pairing simple inputs with generated writing.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-tint">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">CMS Experience</p>
+            <h2>CMS-Built Sites</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <article class="portfolio-card h-100">
+                <img src="images/kellyisasinger.png" alt="KellyIsASinger website preview" />
+                <div class="card-body">
+                  <h3>KellyIsASinger</h3>
+                  <p>Performer website with clear content hierarchy and audience-focused pages.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="portfolio-card h-100">
+                <img src="images/Full logo.PNG" alt="Maison Lancon website logo" />
+                <div class="card-body">
+                  <h3>Maison Lancon</h3>
+                  <p>Brand-forward CMS site work balancing visual identity and usability.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          Contact me directly:
+          <a href="mailto:kelly@kellyisasinger.com">kelly@kellyisasinger.com</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

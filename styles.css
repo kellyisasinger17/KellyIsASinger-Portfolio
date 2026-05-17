@@ -441,6 +441,12 @@ p {
   margin-top: 1.65rem;
 }
 
+.about-resume-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 .about-tools {
   align-items: center;
   display: flex;
@@ -464,17 +470,19 @@ p {
 }
 
 .compact-tool-grid {
+  background: #ffff;
   gap: 0.7rem 0.8rem;
   grid-template-columns: repeat(5, minmax(42px, 1fr));
+  padding: 0.45rem;
 }
 
 .compact-tool-grid .tool-card {
-  background: transparent;
+  background: #ffff;
   border: 0;
-  border-radius: 0;
+  border-radius: 4px;
   gap: 0.3rem;
   min-height: auto;
-  padding: 0;
+  padding: 0.35rem 0.2rem;
 }
 
 .compact-tool-grid .tool-card img {

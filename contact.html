@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playwrite+CU+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top portfolio-nav">
@@ -66,12 +66,21 @@
     <main>
       <section class="page-header contact-header">
         <div class="container">
-          <p class="eyebrow">Contact</p>
-          <h1>Let&apos;s talk about your next web project.</h1>
-          <p class="page-intro">
-            Based in New York, NY, and available for front-end development,
-            responsive websites, and thoughtful UI implementation.
-          </p>
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <p class="eyebrow">Contact</p>
+              <p class="page-intro">
+                Based in New York, NY: front-end development, responsive sites, and thoughtful UX/UI implementation.
+              </p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <img
+                class="hero-image"
+                src="images/Headshot 2026.png"
+                alt="Kelly Lançon headshot"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -80,19 +89,17 @@
           <div class="row g-4">
             <div class="col-lg-7">
               <div class="contact-card">
-                <h2>Send a Note</h2>
                 <p>
                   I would love to connect and learn more about your latest project or
-                  idea.
+                  ideas!
                 </p>
                 <a class="btn btn-primary" href="mailto:kelly@kellyisasinger.com">
-                  Email Kelly
+                  Send a note!
                 </a>
               </div>
             </div>
             <div class="col-lg-5">
               <div class="contact-card">
-                <h2>Socials</h2>
                 <a
                   class="social-link"
                   href="https://linkedin.com/in/kellyisasinger"
@@ -100,7 +107,7 @@
                   rel="noreferrer"
                 >
                   <img src="images/linkedin.png" alt="LinkedIn logo" />
-                  <span>Connect on LinkedIn</span>
+                  <span>Connect on Linkedin</span>
                 </a>
               </div>
             </div>
